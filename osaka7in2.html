@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0" />
+<title>营业日程 ｜ 【大阪周游卡】</title>
+
+<meta name="Author"  content="OSAKA CONVENTION & TOURISM BUREAU" />
+<meta name="Keywords" content="营业日程" />
+<meta name="Description" content="营业日程" />
+<meta name="robots" content="index, follow" />
+
+<link rel="bookmark" title="" href="http://www.osaka-info.jp" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" media="all" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../css/print.css" />
+<link rel="stylesheet" media="all" type="text/css" href="../css/calendar.css">
+
+
+<script type="text/javascript" src="../../js/jquery_1.12.1_min.js"></script>
+<script type="text/javascript" src="../../js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../../js/jquery.hoverIntent.minified.js"></script>
+<script type="text/javascript" src="../../js/megahover.js"></script>
+<script type="text/javascript" src="../../js/pg_common.js"></script>
+	<script src="../../js/lib/heightLine.js"></script>
+	<script src="../../js/pg_calendar.js"></script>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- ここからヘッダー -->
+<div id="header" class="clearfix">
+</div>
+
+<div id="main" class="bk04">
+<div id="pankuzu">
+	<a href="../">HOME</a>
+	 > 营业日程</div>
+<section>
+<div id="main_contents" class="bk07">
+<div class="wrapper">
+	<h2>营业日程</h2>
+	<div class="title_bar"></div>
+
+	<p class="lead">因天气恶劣或设施维护等原因，各设施有紧急闭馆的可能。<br />
+详情请直接向各设施进行咨询。</p>
+
+	<div class="calendar-box cal_sp">
+		
+<input type="hidden" name="calendar_url" value="./index?targeted=" />
+		<select name="targeted_year">
+<option value="2017" selected="selected">2017</option>
+<option value="2018">2018</option>
+</select>
+<span>/</span>
+		<select name="targeted_month">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9" selected="selected">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+<span>/</span>
+		<select name="targeted_day">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30" selected="selected">30</option>
+<option value="31">31</option>
+</select>
+	</div>
+	<div class="calendar-box cal_pc">
+		<div class="date-box">
+			<p>
+				<a href="./index?targeted=20170830"><img src="../../img/arrow_left.png" width="30" height="100" alt="<" /></a>
+			</p>
+			<dl>
+				<dt>2017</dt>
+				<dd>9</dd>
+			</dl>
+			<p>
+				<a href="./index?targeted=20171030"><img src="../../img/arrow_right.png" width="30" height="100" alt=">" /></a>
+			</p>
+		</div>
+		<div class="day-box">
+			<table>
+				<tr>
+					<td class=" ">
+						<a href="./index?targeted=20170901">1</a>
+					</td>
+					<td class="saturday ">
+						<a href="./index?targeted=20170902">2</a>
+					</td>
+					<td class="holiday ">
+						<a href="./index?targeted=20170903">3</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170904">4</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170905">5</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170906">6</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170907">7</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170908">8</a>
+					</td>
+					<td class="saturday ">
+						<a href="./index?targeted=20170909">9</a>
+					</td>
+					<td class="holiday ">
+						<a href="./index?targeted=20170910">10</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170911">11</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170912">12</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170913">13</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170914">14</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170915">15</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="saturday ">
+						<a href="./index?targeted=20170916">16</a>
+					</td>
+					<td class="holiday ">
+						<a href="./index?targeted=20170917">17</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170918">18</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170919">19</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170920">20</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170921">21</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170922">22</a>
+					</td>
+					<td class="saturday ">
+						<a href="./index?targeted=20170923">23</a>
+					</td>
+					<td class="holiday ">
+						<a href="./index?targeted=20170924">24</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170925">25</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170926">26</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170927">27</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170928">28</a>
+					</td>
+					<td class=" ">
+						<a href="./index?targeted=20170929">29</a>
+					</td>
+					<td class="saturday today ">
+						<a href="./index?targeted=20170930">30</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="thum-box">
+		<ul class="thumbnail heightLineParent">
+			<li>
+				<p>
+					<a href="../facility/detail?id=1">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/1/01.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=1">01　道顿堀ZAZA</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=2">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/2/02.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=2">02　上方浮世绘馆</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=3">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/3/03.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=3">03　JAPAN NIGHT WALK TOUR</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=4">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/4/04.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=4">04　道顿堀水上观光船</a>
+				</h3>
+			</li>
+		</ul>
+		<ul class="thumbnail heightLineParent">
+			<li>
+				<p>
+					<a href="../facility/detail?id=5">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/5/05.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=5">05　Tombori River JAZZ Boat</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=6">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/6/06.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=6">06　中之岛水上观光船</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=7">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/7/07.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=7">07　梅田蓝天大厦 空中庭园展望台</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=8">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/8/08.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=8">08　HEP FIVE摩天轮</a>
+				</h3>
+			</li>
+		</ul>
+		<ul class="thumbnail heightLineParent">
+			<li>
+				<p>
+					<a href="../facility/detail?id=9">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/9/09.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=9">09　天然温泉 浪速之汤</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=10">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/10/10.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=10">10　大阪生活今昔馆（大阪市立人居博物馆）</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=11">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/11/11.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=11">11　大阪市立科学馆</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=12">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/12/12.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=12">12　大阪市立东洋陶瓷美术馆</a>
+				</h3>
+			</li>
+		</ul>
+		<ul class="thumbnail heightLineParent">
+			<li>
+				<p>
+					<a href="../facility/detail?id=13">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/13/13.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=13">13　梅田JOY POLIS Wild　River</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=14">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/14/14.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=14">14　通天阁</a>
+				</h3>
+				<p class="icon-status">
+					<img src="img/icn_opn_other.png" width="109" height="41" class="pg_icon">
+				</p>
+				<p class="txt-box">
+折扣不适用				</p>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=15">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/15/15.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=15">15　四天王寺（中心伽蓝、本坊庭园）</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=16">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/16/16.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=16">16　大阪市立美术馆</a>
+				</h3>
+			</li>
+		</ul>
+		<ul class="thumbnail heightLineParent">
+			<li>
+				<p>
+					<a href="../facility/detail?id=17">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/17/17.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=17">17　大阪天王寺动物园</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=18">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/18/18.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=18">18　庆泽园</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=19">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/19/19.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=19">19　大阪市立长居植物园</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=20">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/20/20.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=20">20　大阪市立自然史博物馆</a>
+				</h3>
+			</li>
+		</ul>
+		<ul class="thumbnail heightLineParent">
+			<li>
+				<p>
+					<a href="../facility/detail?id=21">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/21/21.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=21">21　大阪城天守阁</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=22">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/22/22.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=22">22　大阪城西之丸庭园</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=23">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/23/23.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=23">23　重要文化遗产 大阪城橹（箭楼）</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=24">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/24/24.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=24">24　大阪历史博物馆</a>
+				</h3>
+			</li>
+		</ul>
+		<ul class="thumbnail heightLineParent">
+			<li>
+				<p>
+					<a href="../facility/detail?id=25">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/25/25.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=25">25　大阪企业家博物馆</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=26">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/26/26.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=26">26　大阪和平馆（大阪国际和平中心）</a>
+				</h3>
+				<p class="icon-status">
+					<img src="img/icn_cls_regular.png" width="109" height="41" class="pg_icon">
+				</p>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=27">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/27/27.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=27">27　大阪水上巴士 Aqua-Liner</a>
+				</h3>
+				<p class="icon-status">
+					<img src="img/icn_opn_discount.png" width="109" height="41" class="pg_icon">
+				</p>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=28">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/28/28.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=28">28　大阪水上巴士天满桥绝景观光船</a>
+				</h3>
+			</li>
+		</ul>
+		<ul class="thumbnail heightLineParent">
+			<li>
+				<p>
+					<a href="../facility/detail?id=29">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/29/29.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=29">29　大川樱花游览船</a>
+				</h3>
+				<p class="icon-status">
+					<img src="img/icn_cls_regular.png" width="109" height="41" class="pg_icon">
+				</p>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=30">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/30/30.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=30">30　大阪城御座船</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=31">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/31/31.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=31">31　鲜花竞放馆</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=32">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/32/32.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=32">32　天保山大摩天轮</a>
+				</h3>
+			</li>
+		</ul>
+		<ul class="thumbnail heightLineParent">
+			<li>
+				<p>
+					<a href="../facility/detail?id=33">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/33/33.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=33">33　船长线（Captain Line）</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=34">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/34/34.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=34">34　帆船型游船 圣玛利亚号 白天观光</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=35">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/35/35.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=35">35　帆船型游船 圣玛利亚号 傍晚观光</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=36">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/36/36.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=36">36　大阪府咲洲厅舍展望台</a>
+				</h3>
+			</li>
+		</ul>
+		<ul class="thumbnail heightLineParent">
+			<li>
+				<p>
+					<a href="../facility/detail?id=37">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/37/37.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=37">37　LEGOLAND® Discovery Center Osaka</a>
+				</h3>
+			</li>
+			<li>
+				<p>
+					<a href="../facility/detail?id=38">
+						<img src="http://www.japan-osaka.cn/osp/upload/facility_shop/38/38.jpg" width="200">
+					</a>
+				</p>
+				<h3>
+					<a href="../facility/detail?id=38">38　天然露天温泉 SPA 住之江</a>
+				</h3>
+			</li>
+	</div>
+</div>
+</div>
+</section>
+</div><!-- #main end -->
+
+
+<!-- ここからフッター -->
+<div id="footer">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0" />
+<title>出示乘车卡可免费入场的设施 ｜ 【大阪周游卡】</title>
+
+<meta name="Author"  content="OSAKA CONVENTION & TOURISM BUREAU" />
+<meta name="Keywords" content="大阪周游卡,出示乘车卡可免费入场的设施" />
+<meta name="Description" content="大阪の観光スポット30ヶ所以上が無料になるお得なパスです。" />
+<meta name="robots" content="index, follow" />
+
+<link rel="bookmark" title="" href="http://www.osaka-info.jp" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" media="all" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../css/print.css" />
+<link rel="stylesheet" media="all" type="text/css" href="../css/facility.css">
+
+
+<script type="text/javascript" src="../../js/jquery_1.12.1_min.js"></script>
+<script type="text/javascript" src="../../js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../../js/jquery.hoverIntent.minified.js"></script>
+<script type="text/javascript" src="../../js/megahover.js"></script>
+<script type="text/javascript" src="../../js/pg_common.js"></script>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- ここからヘッダー -->
+<div id="header" class="clearfix">
+</div>
+
+<div id="main" class="bk03">
+<style>.attention {color:red;}</style>
+
+<div id="pankuzu">
+	<a href="../">HOME</a>
+	 > 可以使用的设施	 > <a href="../facility/free">可免费使用的设施</a>
+</div>
+
+<section>
+	<div id="facility_contents" class="clearfix">
+		<div class="facility_contents_wrap free_fee">
+			<div class="contents_title_service">
+				<div class="facility_service"><img src="img/facility_service.png" width="100%" alt="SERVICE" /></div>
+			</div>
+			<div class="facility_contents_body">
+				<div class="facility_contents_text">
+					<div class="title_facility"><h2><img src="img/title_facility_free.png" width="100%" alt="カード乗車券提示で無料で利用できる施設" /></h2></div>
+					<p>
+						出示乘车卡，在搭乘电车和巴士当天（2 日券为连续2 天）可享受各设施仅限1 次的免费入场优惠。<br />
+						但<span class="num">04</span>、<span class="num">05</span>、<span class="num">06</span>只可任选1 项使用，<span class="num">34</span>和<span class="num">35</span>只可任选1项使用。<br />
+						<img src="../../img/ic_limit.png" width="30" class="img_sp ic_limit" /> 为期间限定设施，亦或仅限定期间可免费利用的设施。<!--
+						※<span class="num">04</span>、<span class="num">05</span>、<span class="num">06</span>はいずれか１つのみ利用可。<br/>
+						※<span class="num">34</span>、<span class="num">35</span>はどちらか１つのみ利用可。<br/>
+-->
+					</p>
+					<div class="free">
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=1"><span class="num">01</span>道顿堀ZAZA</a>
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]500日元</div>
+								<div class="list_holiday">[休息日]不定期休息</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />仅限ZAZA搞笑现场表演								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=2"><span class="num">02</span>上方浮世绘馆</a>
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]500日元</div>
+								<div class="list_holiday">[休息日]周一（如逢节假日则顺延至隔天休息）、12/29～1/1</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=3"><span class="num">03</span>JAPAN NIGHT WALK TOUR</a>
+									<img src="../../img/ic_new.png" width="30" class="img_sp ic_new" />
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]1,000日元</div>
+								<div class="list_holiday">[休息日]不定期休息</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=4"><span class="num">04</span>道顿堀水上观光船</a>
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]900日元</div>
+								<div class="list_holiday">[休息日]7/13、24、25，8/5</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />售票处工作日12:00、周六、周日、节假日10:00 开始营业 <img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />如遇满员则无法乘船 <img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />小雨航班照常运行 <img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />傍晚以后的班次可能提前售罄，请尽量白天前往换取船票。<br />
+<span style="color:#FF0000;">04, 05,06只可任选1项使用</span>								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=5"><span class="num">05</span>Tombori River JAZZ Boat</a>
+									<img src="../../img/ic_limit.png" width="30" class="img_sp ic_limit" />
+							</div>
+							<div class="free_body_right">
+								<div class="attention"><span style="color:rgb(255, 0, 0)">期间限定航行 5・6・9・10・11月的周六、周日、节假日， 7・8月的周六</span></div>
+								<div class="list_price">[通常费用]1,800日元</div>
+								<div class="list_holiday">[休息日]8/5</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />每个航班限先到的前5位乘客 <img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />换取船票仅限11:00～12:00 <img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />雨天停航<br />
+<span style="color:#FF0000;">04, 05,06只可任选1项使用</span>								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=6"><span class="num">06</span>中之岛水上观光船</a>
+									<img src="../../img/ic_new.png" width="30" class="img_sp ic_new" />
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]900日元</div>
+								<div class="list_holiday">[休息日]7/13、24、25，8/5，12/26～1/3（1/4以后有停航的可能）</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />售票处通常为16:00、4/29、30，5/3～7，8/11～15为12:00 开始营业 <img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />如遇满员则无法乘船 <img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />小雨航班照常运行<br />
+<span style="color:#FF0000;">04, 05,06只可任选1项使用</span>								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=7"><span class="num">07</span>梅田蓝天大厦 空中庭园展望台</a>
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]1,000日元</div>
+								<div class="list_holiday">[休息日]无休</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />预计傍晚以后会拥挤								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=8"><span class="num">08</span>HEP FIVE摩天轮</a>
+							</div>
+							<div class="free_body_right">
+								<div class="news">
+									<p>
+										2017.05.29										<img src="../img/new.png" /><br/>
+										06月15日，营业时间变更。<br/>营业时间如下。<br/>18:00～23:00									</p>
+								</div>
+								<div class="list_price">[通常费用]500日元</div>
+								<div class="list_holiday">[休息日]不定期休息</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=9"><span class="num">09</span>天然温泉 浪速之汤</a>
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]800日元</div>
+								<div class="list_holiday">[休息日]不定期休息</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />有纹身者免进 <img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />不免费提供毛巾 <img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />岩盘浴需另行支付费用								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=10"><span class="num">10</span>大阪生活今昔馆（大阪市立人居博物馆）</a>
+							</div>
+							<div class="free_body_right">
+								<div class="news">
+									<p>
+										2017.06.01										<img src="../img/new.png" /><br/>
+										07月25日，开馆(临时)。									</p>
+								</div>
+								<div class="attention">仅限常设展可免费入场</div>
+								<div class="list_price">[通常费用]600日元</div>
+								<div class="list_holiday">[休息日]周二、12/29～1/2</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />仅限常设展								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=11"><span class="num">11</span>大阪市立科学馆</a>
+							</div>
+							<div class="free_body_right">
+								<div class="news">
+									<p>
+										2017.03.30										<br/>
+										06月01日，休息(临时)。									</p>
+								</div>
+								<div class="list_price">[通常费用]400日元</div>
+								<div class="list_holiday">[休息日]周一（如逢节假日则顺延至下一个工作日休息）、12/28～1/4。5/1、8/14特别开馆</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />天象仪需另行支付费用								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=12"><span class="num">12</span>大阪市立东洋陶瓷美术馆</a>
+									<img src="../../img/ic_limit.png" width="30" class="img_sp ic_limit" />
+							</div>
+							<div class="free_body_right">
+								<div class="attention"><span style="color:rgb(255, 0, 0)">免费入场仅限举办平常展（8/12～9/10）、企画展（9/23～12/3）期间</span></div>
+								<div class="list_price">[通常费用]平常展500日元<br />
+企画展900日元</div>
+								<div class="list_holiday">[休息日]周一（如逢节假日则顺延至下一个工作日休息）、12/28～1/4、展览更替期间</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=13"><span class="num">13</span>梅田JOY POLIS Wild　River</a>
+									<img src="../../img/ic_new.png" width="30" class="img_sp ic_new" />
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]600日元</div>
+								<div class="list_holiday">[休息日]不定期休息</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />有身高限制（110cm以上）								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=14"><span class="num">14</span>通天阁</a>
+									<img src="../../img/ic_limit.png" width="30" class="img_sp ic_limit" />
+							</div>
+							<div class="free_body_right">
+								<div class="attention"><span style="color:rgb(255, 0, 0)">免费入场仅限周一～周五</span></div>
+								<div class="list_price">[通常费用]700日元</div>
+								<div class="list_holiday">[休息日]无休</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />周六、周日不可使用								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=15"><span class="num">15</span>四天王寺（中心伽蓝、本坊庭园）</a>
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]各300日元</div>
+								<div class="list_holiday">[休息日]无休（庭园4/22和每月1～10日休园。但4、8、12、1月除外）</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />参观境内第二处景点时需再次提示乘车卡								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=16"><span class="num">16</span>大阪市立美术馆</a>
+									<img src="../../img/ic_limit.png" width="30" class="img_sp ic_limit" />
+							</div>
+							<div class="free_body_right">
+								<div class="news">
+									<p>
+										2017.05.29										<img src="../img/new.png" /><br/>
+										06月05日～07月06日，休息(长期)。									</p>
+								</div>
+								<div class="attention"><span style="color:rgb(255, 0, 0)">免费入场仅限举办收藏展时（预定）4/8～6/4、7/7～19、8/1～10/1、10/14～1/21、2/24～3/25</span></div>
+								<div class="list_price">[通常费用]300日元</div>
+								<div class="list_holiday">[休息日]周一（如逢节假日则顺延至下一个工作日休息）、12/28～1/2、展览更替期间</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=17"><span class="num">17</span>大阪天王寺动物园</a>
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]500日元</div>
+								<div class="list_holiday">[休息日]周一（如逢节假日则顺延至下一个工作日休息）、12/29～1/1</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=18"><span class="num">18</span>庆泽园</a>
+									<img src="../../img/ic_new.png" width="30" class="img_sp ic_new" />
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]150日元</div>
+								<div class="list_holiday">[休息日]周一（如逢节假日则顺延至下一个工作日休息）、12/29～1/1</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=19"><span class="num">19</span>大阪市立长居植物园</a>
+							</div>
+							<div class="free_body_right">
+								<div class="news">
+									<p>
+										2017.05.23										<img src="../img/new.png" /><br/>
+										07月03日，开馆(临时)。									</p>
+									<p>
+										2017.05.23										<img src="../img/new.png" /><br/>
+										08月14日，开馆(临时)。									</p>
+								</div>
+								<div class="list_price">[通常费用]200日元</div>
+								<div class="list_holiday">[休息日]周一（如逢节假日则顺延至下一个工作日休息）、12/28～1/4</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />不参观 20 只进入长居植物园时需使用 <img src="../img/ic_tokutoku.gif" /> 。只限使用周游卡乘坐电车和巴士当日可以使用。								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=20"><span class="num">20</span>大阪市立自然史博物馆</a>
+							</div>
+							<div class="free_body_right">
+								<div class="attention">仅限常设展览入场免费</div>
+								<div class="list_price">[通常费用]300日元</div>
+								<div class="list_holiday">[休息日]周一 （如逢节假日则顺延至下一个工作日休息）、12/28～1/4</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />仅限常设展<br />
+<img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />也可进入长居植物园								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=21"><span class="num">21</span>大阪城天守阁</a>
+							</div>
+							<div class="free_body_right">
+								<div class="news">
+									<p>
+										2017.05.23										<img src="../img/new.png" /><br/>
+										07月22日～08月20日，营业时间变更。<br/>营业时间如下。<br/>09:00～19:00									</p>
+									<p>
+										2017.05.23										<img src="../img/new.png" /><br/>
+										08月21日～08月27日，营业时间变更。<br/>营业时间如下。<br/>09:00～18:00									</p>
+								</div>
+								<div class="list_price">[通常费用]600日元</div>
+								<div class="list_holiday">[休息日]12/28～1/1</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />体验戴头盔和试穿阵羽织需另行支付费用								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=22"><span class="num">22</span>大阪城西之丸庭园</a>
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]200日元</div>
+								<div class="list_holiday">[休息日]周一 （如逢节假日则顺延至下一个工作日休息）、12/28～1/4</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />有可能会长期休园								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=23"><span class="num">23</span>重要文化遗产 大阪城橹（箭楼）</a>
+									<img src="../../img/ic_new.png" width="30" class="img_sp ic_new" />
+									<img src="../../img/ic_limit.png" width="30" class="img_sp ic_limit" />
+							</div>
+							<div class="free_body_right">
+								<div class="attention"><span style="color:rgb(255, 0, 0)">期间限定公开2017年4/1～11/26的周六、周日、节假日</span></div>
+								<div class="list_price">[通常费用]700日元</div>
+								<div class="list_holiday">[休息日]不定期休息</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />4/1～9 期间为每天开放、7/22～8/31 期间除周一外每天开放 <img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />西之丸庭园前的售票处受理								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=24"><span class="num">24</span>大阪历史博物馆</a>
+							</div>
+							<div class="free_body_right">
+								<div class="attention"><span style="color:rgb(255, 0, 0)">仅限常设展览入场免费</span></div>
+								<div class="list_price">[通常费用]600日元</div>
+								<div class="list_holiday">[休息日]周二、12/28～1/4</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />仅限常设展								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=25"><span class="num">25</span>大阪企业家博物馆</a>
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]300日元</div>
+								<div class="list_holiday">[休息日]周日、周一、节假日、8/13～16、12/27～1/4</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=26"><span class="num">26</span>大阪和平馆（大阪国际和平中心）</a>
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]250日元</div>
+								<div class="list_holiday">[休息日]周一、月末、节假日的隔天（如周一逢节假日，将在隔天开馆。节假日的隔天及月末为周日时，则在周二休馆）、12/28～1/4</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=27"><span class="num">27</span>大阪水上巴士 Aqua-Liner</a>
+									<img src="../../img/ic_limit.png" width="30" class="img_sp ic_limit" />
+							</div>
+							<div class="free_body_right">
+								<div class="attention"><span style="color:rgb(255, 0, 0)">免费乘船期间仅限12月～2018年2月</span></div>
+								<div class="list_price">[通常费用]1,700日元（春季特别期间：～2017年4/15为2,000日元）</div>
+								<div class="list_holiday">[休息日]1/17、18，2/7、8</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />春季特别期间无优惠<br />
+<img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />7/25下午航班全部停运<br />
+<img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />仅限大阪城、中之岛环游路线或区间路线可以使用<br />
+<img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />根据季节和乘船处，开船时间及末班船时间将有所变动								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=28"><span class="num">28</span>大阪水上巴士天满桥绝景观光船</a>
+									<img src="../../img/ic_new.png" width="30" class="img_sp ic_new" />
+									<img src="../../img/ic_limit.png" width="30" class="img_sp ic_limit" />
+							</div>
+							<div class="free_body_right">
+								<div class="news">
+									<p>
+										2017.03.30										<br/>
+										07月08日，开馆(临时)。									</p>
+								</div>
+								<div class="attention"><span style="color: rgb(255, 0, 0);">期间限定航行5/2～11/30</span></div>
+								<div class="list_price">[通常费用]1,500日元</div>
+								<div class="list_holiday">[休息日]周一（如逢节假日航行）7/7、25</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />如遇满员则无法乘船								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=29"><span class="num">29</span>大川樱花游览船</a>
+									<img src="../../img/ic_limit.png" width="30" class="img_sp ic_limit" />
+							</div>
+							<div class="free_body_right">
+								<div class="attention"><span style="color: rgb(255, 0, 0);">期间限定航行2017年4/1～17</span></div>
+								<div class="list_price">[通常费用]1,200日元</div>
+								<div class="list_holiday">[休息日]无休</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />雨天减少班次								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=30"><span class="num">30</span>大阪城御座船</a>
+									<img src="../../img/ic_new.png" width="30" class="img_sp ic_new" />
+									<img src="../../img/ic_limit.png" width="30" class="img_sp ic_limit" />
+							</div>
+							<div class="free_body_right">
+								<div class="attention"><span style="color:rgb(255, 0, 0)">免费乘船期间为2017年4/17～2018年3/31</span></div>
+								<div class="list_price">[通常费用]1,500日元</div>
+								<div class="list_holiday">[休息日]12/28～1/3</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=31"><span class="num">31</span>鲜花竞放馆</a>
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]500日元</div>
+								<div class="list_holiday">[休息日]周一（如逢节假日则顺延至隔天休息）、12/28～1/4</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=32"><span class="num">32</span>天保山大摩天轮</a>
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]800日元</div>
+								<div class="list_holiday">[休息日]1/17、18，2/7、8</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=33"><span class="num">33</span>船长线（Captain Line）</a>
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]1,300日元</div>
+								<div class="list_holiday">[休息日]不定期休息（USJ休园日及海游馆休馆日全部班次停航）</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />可往返免费乘船（根据时间段，有可能限定单程乘船）								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=34"><span class="num">34</span>帆船型游船 圣玛利亚号 白天观光</a>
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]1,600日元</div>
+								<div class="list_holiday">[休息日]12/31、<span style="color:rgb(255, 0, 0)">1/9～2/2</span>、2/7、8</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />因气候因素可能更改路线<br />
+<span style="color:#FF0000;">34,35只可任选1项使用</span>								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=35"><span class="num">35</span>帆船型游船 圣玛利亚号 傍晚观光</a>
+									<img src="../../img/ic_limit.png" width="30" class="img_sp ic_limit" />
+							</div>
+							<div class="free_body_right">
+								<div class="news">
+									<p>
+										2017.05.22										<img src="../img/new.png" /><br/>
+										06月03日，休息(临时)。									</p>
+									<p>
+										2017.05.22										<img src="../img/new.png" /><br/>
+										06月17日，休息(临时)。									</p>
+									<p>
+										2017.05.22										<img src="../img/new.png" /><br/>
+										06月24日，休息(临时)。									</p>
+								</div>
+								<div class="attention"><span style="color:rgb(255, 0, 0)">期间限定航行 2017年4月下旬～10/29期间的周六、周日和节假日</span></div>
+								<div class="list_price">[通常费用]2,100日元</div>
+								<div class="list_holiday">[休息日]无（但包船班次除外）</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />仅8月份每天航行　<img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />如遇包船则无法乘船<br />
+<span style="color:#FF0000;">34,35只可任选1项使用</span>								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=36"><span class="num">36</span>大阪府咲洲厅舍展望台</a>
+							</div>
+							<div class="free_body_right">
+								<div class="list_price">[通常费用]700日元</div>
+								<div class="list_holiday">[休息日]周一（如逢节假日则顺延至隔天休息）、1/1</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=37"><span class="num">37</span>LEGOLAND® Discovery Center Osaka</a>
+									<img src="../../img/ic_new.png" width="30" class="img_sp ic_new" />
+							</div>
+							<div class="free_body_right">
+								<div class="news">
+									<p>
+										2017.05.19										<img src="../img/new.png" /><br/>
+										06月08日，营业时间变更。<br/>营业时间如下。<br/>10:00～18:00									</p>
+									<p>
+										2017.06.01										<img src="../img/new.png" /><br/>
+										07月01日，营业时间变更。<br/>营业时间如下。<br/>10:00～18:00									</p>
+									<p>
+										2017.06.01										<img src="../img/new.png" /><br/>
+										07月07日，营业时间变更。<br/>营业时间如下。<br/>10:00～18:00									</p>
+								</div>
+								<div class="list_price">[通常费用]2,300日元</div>
+								<div class="list_holiday">[休息日]不定期休息</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />谢绝只有成人或只有儿童入场　<img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />仅限通常营业日使用　<img alt="注意事項" height="16" src="../img/ic_caution.png" title="注意事項" width="16" />拥挤时有入场限制								</div>
+							</div>
+						</div><!-- /.free_body -->
+						<div class="free_body">
+							<div class="free_body_left">
+								<a href="../facility/detail?id=38"><span class="num">38</span>天然露天温泉 SPA 住之江</a>
+							</div>
+							<div class="free_body_right">
+								<div class="news">
+									<p>
+										2017.05.19										<img src="../img/new.png" /><br/>
+										06月12日～06月14日，休息(临时)。									</p>
+								</div>
+								<div class="list_price">[通常费用]工作日650日元周六周日及节假日750日元</div>
+								<div class="list_holiday">[休息日]不定期休息</div>
+								<div class="list_attention">
+									<img src="../img/ic_caution.png" />有刺青者谢绝入浴,不免费提供毛巾								</div>
+							</div>
+						</div><!-- /.free_body -->
+					</div><!-- /.free -->
+
+					<p>
+						<span class="big bold red">各设施的营业情况请务必提前确认！！</span><br />
+						<span class="bold red">各设施可能会因气候、维修养护、举办活动等而临时停业。</span>
+					</p>
+					<p>
+						<span class="red">
+							<span class="num">04</span>、<span class="num">05</span>、<span class="num">06</span>、<span class="num">27</span>、<span class="num">28</span>、<span class="num">29</span>、<span class="num">30</span>、<span class="num">33</span>、<br class="sp_contents"><span class="num">34</span>、<span class="num">35</span>除上述情况外，<br />
+还可能因河流状况、改修、船舶修理等不经预告而停航。<br />
+详情请垂询各设施。<br />
+即使无法利用各设施，也不能退款。						</span>
+					</p>
+					<p>
+						※通常费用指的是每位成人的费用。<br />
+						<span class="red">※费用可能出现变动。通常费用等详情请垂询各设施。</span>
+					</p>
+				</div><!-- /.facility_contents_text -->
+			</div><!-- /.facility_contents_body -->
+
+			<div class="facility_contents_btn">
+			</div>
+		</div>
+	</div><!-- /#facility_contents -->
+</section>
+</div><!-- #main end -->
+
+
+<!-- ここからフッター -->
+<div id="footer">
+</div>
+
+</body>
+</html>
